@@ -127,7 +127,25 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="AppException.cpp" />
+    <ClCompile Include="Cliente.cpp" />
+    <ClCompile Include="DecoratorExtraQueso.cpp" />
+    <ClCompile Include="DecoratorSinSal.cpp" />
+    <ClCompile Include="Menu.cpp" />
+    <ClCompile Include="Pedido.cpp" />
+    <ClCompile Include="Producto.cpp" />
     <ClCompile Include="Proyecto-Progra.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AppException.h" />
+    <ClInclude Include="Cliente.h" />
+    <ClInclude Include="DecoratorExtraQueso.h" />
+    <ClInclude Include="DecoratorSinSal.h" />
+    <ClInclude Include="IProducto.h" />
+    <ClInclude Include="Menu.h" />
+    <ClInclude Include="Pedido.h" />
+    <ClInclude Include="Producto.h" />
+    <ClInclude Include="ProductoDecorator.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
