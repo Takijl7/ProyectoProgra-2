@@ -39,6 +39,9 @@
     <ClCompile Include="..\..\..\..\Takijl7\ProyectoProgra-2\Proyecto-Progra\Pedido.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="ana.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\..\Takijl7\ProyectoProgra-2\Proyecto-Progra\AppException.h">

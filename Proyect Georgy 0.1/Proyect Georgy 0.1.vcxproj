@@ -131,6 +131,7 @@
     <ClCompile Include="..\..\..\..\Takijl7\ProyectoProgra-2\Proyecto-Progra\Pedido.cpp" />
     <ClCompile Include="..\..\..\..\Takijl7\ProyectoProgra-2\Proyecto-Progra\Producto.cpp" />
     <ClCompile Include="..\..\..\..\Takijl7\ProyectoProgra-2\Proyecto-Progra\Proyecto-Progra.cpp" />
+    <ClCompile Include="ana.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\..\Takijl7\ProyectoProgra-2\Proyecto-Progra\AppException.h" />
