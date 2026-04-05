@@ -131,18 +131,17 @@
     <ClCompile Include="..\..\..\..\Takijl7\ProyectoProgra-2\Proyecto-Progra\Pedido.cpp" />
     <ClCompile Include="..\..\..\..\Takijl7\ProyectoProgra-2\Proyecto-Progra\Producto.cpp" />
     <ClCompile Include="..\..\..\..\Takijl7\ProyectoProgra-2\Proyecto-Progra\Proyecto-Progra.cpp" />
-    <ClCompile Include="ana.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\..\Takijl7\ProyectoProgra-2\Proyecto-Progra\AppException.h" />
-    <ClInclude Include="..\..\..\..\Takijl7\ProyectoProgra-2\Proyecto-Progra\Cliente.h" />
-    <ClInclude Include="..\..\..\..\Takijl7\ProyectoProgra-2\Proyecto-Progra\DecoratorExtraQueso.h" />
-    <ClInclude Include="..\..\..\..\Takijl7\ProyectoProgra-2\Proyecto-Progra\DecoratorSinSal.h" />
-    <ClInclude Include="..\..\..\..\Takijl7\ProyectoProgra-2\Proyecto-Progra\IProducto.h" />
-    <ClInclude Include="..\..\..\..\Takijl7\ProyectoProgra-2\Proyecto-Progra\Menu.h" />
-    <ClInclude Include="..\..\..\..\Takijl7\ProyectoProgra-2\Proyecto-Progra\Pedido.h" />
-    <ClInclude Include="..\..\..\..\Takijl7\ProyectoProgra-2\Proyecto-Progra\Producto.h" />
-    <ClInclude Include="..\..\..\..\Takijl7\ProyectoProgra-2\Proyecto-Progra\ProductoDecorator.h" />
+    <ClInclude Include="AppException.h" />
+    <ClInclude Include="Cliente.h" />
+    <ClInclude Include="DecoratorExtraQueso.h" />
+    <ClInclude Include="DecoratorSinSal.h" />
+    <ClInclude Include="IProducto.h" />
+    <ClInclude Include="Menu.h" />
+    <ClInclude Include="Pedido.h" />
+    <ClInclude Include="Producto.h" />
+    <ClInclude Include="ProductoDecorador.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

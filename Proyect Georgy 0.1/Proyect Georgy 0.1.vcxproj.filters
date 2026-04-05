@@ -39,36 +39,33 @@
     <ClCompile Include="..\..\..\..\Takijl7\ProyectoProgra-2\Proyecto-Progra\Pedido.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="ana.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\..\Takijl7\ProyectoProgra-2\Proyecto-Progra\AppException.h">
+    <ClInclude Include="AppException.h">
       <Filter>Resource Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\Takijl7\ProyectoProgra-2\Proyecto-Progra\Cliente.h">
+    <ClInclude Include="Cliente.h">
       <Filter>Resource Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\Takijl7\ProyectoProgra-2\Proyecto-Progra\DecoratorExtraQueso.h">
+    <ClInclude Include="DecoratorExtraQueso.h">
       <Filter>Resource Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\Takijl7\ProyectoProgra-2\Proyecto-Progra\DecoratorSinSal.h">
+    <ClInclude Include="DecoratorSinSal.h">
       <Filter>Resource Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\Takijl7\ProyectoProgra-2\Proyecto-Progra\IProducto.h">
+    <ClInclude Include="IProducto.h">
       <Filter>Resource Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\Takijl7\ProyectoProgra-2\Proyecto-Progra\Menu.h">
+    <ClInclude Include="Menu.h">
       <Filter>Resource Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\Takijl7\ProyectoProgra-2\Proyecto-Progra\Pedido.h">
+    <ClInclude Include="Pedido.h">
       <Filter>Resource Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\Takijl7\ProyectoProgra-2\Proyecto-Progra\Producto.h">
+    <ClInclude Include="Producto.h">
       <Filter>Resource Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\Takijl7\ProyectoProgra-2\Proyecto-Progra\ProductoDecorator.h">
+    <ClInclude Include="ProductoDecorador.h">
       <Filter>Resource Files</Filter>
     </ClInclude>
   </ItemGroup>
