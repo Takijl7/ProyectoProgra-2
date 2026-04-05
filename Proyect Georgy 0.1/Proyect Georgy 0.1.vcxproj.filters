@@ -14,4 +14,59 @@
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\Takijl7\ProyectoProgra-2\Proyecto-Progra\Producto.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Takijl7\ProyectoProgra-2\Proyecto-Progra\Proyecto-Progra.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Takijl7\ProyectoProgra-2\Proyecto-Progra\AppException.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Takijl7\ProyectoProgra-2\Proyecto-Progra\Cliente.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Takijl7\ProyectoProgra-2\Proyecto-Progra\DecoratorExtraQueso.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Takijl7\ProyectoProgra-2\Proyecto-Progra\DecoratorSinSal.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Takijl7\ProyectoProgra-2\Proyecto-Progra\Menu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Takijl7\ProyectoProgra-2\Proyecto-Progra\Pedido.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\Takijl7\ProyectoProgra-2\Proyecto-Progra\AppException.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Takijl7\ProyectoProgra-2\Proyecto-Progra\Cliente.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Takijl7\ProyectoProgra-2\Proyecto-Progra\DecoratorExtraQueso.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Takijl7\ProyectoProgra-2\Proyecto-Progra\DecoratorSinSal.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Takijl7\ProyectoProgra-2\Proyecto-Progra\IProducto.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Takijl7\ProyectoProgra-2\Proyecto-Progra\Menu.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Takijl7\ProyectoProgra-2\Proyecto-Progra\Pedido.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Takijl7\ProyectoProgra-2\Proyecto-Progra\Producto.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Takijl7\ProyectoProgra-2\Proyecto-Progra\ProductoDecorator.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+  </ItemGroup>
 </Project>
