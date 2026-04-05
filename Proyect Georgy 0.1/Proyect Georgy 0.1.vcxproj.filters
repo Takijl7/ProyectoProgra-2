@@ -33,10 +33,25 @@
     <ClCompile Include="Pedido.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Producto.cpp">
+    <ClCompile Include="ProductoBase.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Proyecto-Progra.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PagoTarjeta.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PagoEfectivo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PagoDigital.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EstrategiaCalculo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Ingredientes.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -62,10 +77,28 @@
     <ClInclude Include="Pedido.h">
       <Filter>Resource Files</Filter>
     </ClInclude>
-    <ClInclude Include="Producto.h">
+    <ClInclude Include="ProductoBase.h">
       <Filter>Resource Files</Filter>
     </ClInclude>
     <ClInclude Include="ProductoDecorador.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EstrategiaCalculo.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IEstrategiaPago.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PagoDigital.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PagoEfectivo.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PagoTarjeta.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Ingredientes.h">
       <Filter>Resource Files</Filter>
     </ClInclude>
   </ItemGroup>
