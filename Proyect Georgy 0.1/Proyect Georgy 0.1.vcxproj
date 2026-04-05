@@ -123,14 +123,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\Takijl7\ProyectoProgra-2\Proyecto-Progra\AppException.cpp" />
-    <ClCompile Include="..\..\..\..\Takijl7\ProyectoProgra-2\Proyecto-Progra\Cliente.cpp" />
-    <ClCompile Include="..\..\..\..\Takijl7\ProyectoProgra-2\Proyecto-Progra\DecoratorExtraQueso.cpp" />
-    <ClCompile Include="..\..\..\..\Takijl7\ProyectoProgra-2\Proyecto-Progra\DecoratorSinSal.cpp" />
-    <ClCompile Include="..\..\..\..\Takijl7\ProyectoProgra-2\Proyecto-Progra\Menu.cpp" />
-    <ClCompile Include="..\..\..\..\Takijl7\ProyectoProgra-2\Proyecto-Progra\Pedido.cpp" />
-    <ClCompile Include="..\..\..\..\Takijl7\ProyectoProgra-2\Proyecto-Progra\Producto.cpp" />
-    <ClCompile Include="..\..\..\..\Takijl7\ProyectoProgra-2\Proyecto-Progra\Proyecto-Progra.cpp" />
+    <ClCompile Include="AppException.cpp" />
+    <ClCompile Include="Cliente.cpp" />
+    <ClCompile Include="DecoratoExtraQueso.cpp" />
+    <ClCompile Include="DecoratorSinSal.cpp" />
+    <ClCompile Include="Menu.cpp" />
+    <ClCompile Include="Pedido.cpp" />
+    <ClCompile Include="Producto.cpp" />
+    <ClCompile Include="Proyecto-Progra.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AppException.h" />
