@@ -1,8 +1,8 @@
 #pragma once
 #include "IEstrategiaPago.h"
 
-class PagoEfectivo : public IEstrategiaPago {
+class PagoDigital : public IEstrategiaPago {
 public:
-	void ejecutarPago() override;
+	//void realizarPago() override;
 	const std::string getMensajePago() const override;
 };
