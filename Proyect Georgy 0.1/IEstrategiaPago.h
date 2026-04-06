@@ -1,7 +1,7 @@
 #pragma once
 #include <string>
 //Esta clase es la interfaz para quien quiera realizar el pago del pedido
-
+//Patron DELEGATE
 class IEstrategiaPago {
 public:
 	virtual ~IEstrategiaPago() = default;
