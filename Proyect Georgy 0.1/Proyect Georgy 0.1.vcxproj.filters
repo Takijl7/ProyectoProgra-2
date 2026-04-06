@@ -15,28 +15,28 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\Takijl7\ProyectoProgra-2\Proyecto-Progra\Producto.cpp">
+    <ClCompile Include="AppException.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\Takijl7\ProyectoProgra-2\Proyecto-Progra\Proyecto-Progra.cpp">
+    <ClCompile Include="Cliente.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\Takijl7\ProyectoProgra-2\Proyecto-Progra\AppException.cpp">
+    <ClCompile Include="DecoratoExtraQueso.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\Takijl7\ProyectoProgra-2\Proyecto-Progra\Cliente.cpp">
+    <ClCompile Include="DecoratorSinSal.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\Takijl7\ProyectoProgra-2\Proyecto-Progra\DecoratorExtraQueso.cpp">
+    <ClCompile Include="Menu.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\Takijl7\ProyectoProgra-2\Proyecto-Progra\DecoratorSinSal.cpp">
+    <ClCompile Include="Pedido.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\Takijl7\ProyectoProgra-2\Proyecto-Progra\Menu.cpp">
+    <ClCompile Include="Producto.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\Takijl7\ProyectoProgra-2\Proyecto-Progra\Pedido.cpp">
+    <ClCompile Include="Proyecto-Progra.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
