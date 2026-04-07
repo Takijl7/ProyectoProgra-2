@@ -128,7 +128,7 @@
     <ClCompile Include="DecoratoExtraQueso.cpp" />
     <ClCompile Include="DecoratorSinSal.cpp" />
     <ClCompile Include="EstrategiaCalculo.cpp" />
-    <ClCompile Include="Ingredientes.cpp" />
+    <ClCompile Include="Ingrediente.cpp" />
     <ClCompile Include="Menu.cpp" />
     <ClCompile Include="PagoDigital.cpp" />
     <ClCompile Include="PagoEfectivo.cpp" />
@@ -144,7 +144,7 @@
     <ClInclude Include="DecoratorSinSal.h" />
     <ClInclude Include="EstrategiaCalculo.h" />
     <ClInclude Include="IEstrategiaPago.h" />
-    <ClInclude Include="Ingredientes.h" />
+    <ClInclude Include="Ingrediente.h" />
     <ClInclude Include="IProducto.h" />
     <ClInclude Include="Menu.h" />
     <ClInclude Include="PagoDigital.h" />

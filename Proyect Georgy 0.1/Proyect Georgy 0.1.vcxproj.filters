@@ -51,7 +51,7 @@
     <ClCompile Include="EstrategiaCalculo.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Ingredientes.cpp">
+    <ClCompile Include="Ingrediente.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -98,7 +98,7 @@
     <ClInclude Include="PagoTarjeta.h">
       <Filter>Resource Files</Filter>
     </ClInclude>
-    <ClInclude Include="Ingredientes.h">
+    <ClInclude Include="Ingrediente.h">
       <Filter>Resource Files</Filter>
     </ClInclude>
   </ItemGroup>
