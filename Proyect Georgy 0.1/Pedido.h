@@ -10,13 +10,13 @@ class Pedido {
 private:
 	unsigned int codigo;
 	static unsigned int generador_c;
-	std::vector<std::shared_ptr<IProducto>> productos;
-	std::shared_ptr<Cliente> cliente;
-	std::shared_ptr<IEstrategiaPago> mpago;
+	vector<shared_ptr<IProducto>> productos;
+	shared_ptr<Cliente> cliente;
+	shared_ptr<IEstrategiaPago> mpago;
 public:
-	Pedido(std::shared_ptr<Cliente>);
+	Pedido(shared_ptr<Cliente>);
 
-	void setMetodoPago(std::shared_ptr<IEstrategiaPago>);
-	const std::string realizarPago(float);
-	void agregaProducto(std::shared_ptr<IProducto>);
+	void setMetodoPago(shared_ptr<IEstrategiaPago>);
+	const string realizarPago(float);
+	void agregaProducto(shared_ptr<IProducto>);
 };

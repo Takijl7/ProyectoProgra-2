@@ -1,27 +1,36 @@
 #pragma once
 #include "IProducto.h"
 
+
 class ProductoBase : public IProducto 
 {
 protected:
-	std::string nombre;
+	string nombre;
 	double precioBase;
-	std::string descripcion;
-	std::string categoria;
+	string descripcion;
+	string categoria;
 
+	vector<shared_ptr<Ingrediente>> ingrediente;
+	vector<shared_ptr<Ingrediente>> extras;
+	vector<string> quitados;
 public:
-	ProductoBase(const std::string& nombre, double precioBase, const std::string& descripcion, const std::string& categoria);
+	ProductoBase(const string& nombre, double precioBase, const string& descripcion, const string& categoria);
 
-	std::string getNombre() const override;
+	string getNombre() const override;
 	double getPrecioBase() const override;
 	double getCosto() const override;
-	std::string getDescripcion() const override;
-	std::string getCategoria() const override;
+	string getDescripcion() const override;
+	string getCategoria() const override;
 
-	std::vector<shared_ptr<Ingrediente>> getIngredientes() const override;
-	std::vector<shared_ptr<Ingrediente>> getExtras() const override;
-	std::vector<string> getQuitados() const override;
+	vector<shared_ptr<Ingrediente>> getIngredientes() const override;
+	vector<shared_ptr<Ingrediente>> getExtras() const override;
+	vector<string> getQuitados() const override;
 
-	void agregarIngrediente(const Ingrediente& ing);
-	void quitarIngrediente(const string& nombre);
+	void setIngrediente(const Ingrediente& victor) override;
+	void quitarIngrediente(const string& nombre) override;
+
+	void agregarIngredientes(const vector<Ingrediente>& victor);
 };
+
+
+//AGREGAR NO ES LO MISMO QUE SETEAR, SET ES PAA
