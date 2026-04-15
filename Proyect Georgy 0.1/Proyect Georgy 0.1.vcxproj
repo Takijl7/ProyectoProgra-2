@@ -146,6 +146,7 @@
     <ClInclude Include="IEstrategiaPago.h" />
     <ClInclude Include="Ingrediente.h" />
     <ClInclude Include="IProducto.h" />
+    <ClInclude Include="IProductoIngredientes.h" />
     <ClInclude Include="Menu.h" />
     <ClInclude Include="PagoDigital.h" />
     <ClInclude Include="PagoEfectivo.h" />

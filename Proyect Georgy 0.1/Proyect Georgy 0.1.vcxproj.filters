@@ -101,5 +101,8 @@
     <ClInclude Include="Ingrediente.h">
       <Filter>Resource Files</Filter>
     </ClInclude>
+    <ClInclude Include="IProductoIngredientes.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
