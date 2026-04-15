@@ -1,4 +1,4 @@
-#include "PagoTarejta.h"
+#include "PagoTarjeta.h"
 using namespace std;
 
 const string PagoEfectivo::getMensajePago() const {

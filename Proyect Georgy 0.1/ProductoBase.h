@@ -30,6 +30,10 @@ public:
 	void quitarIngrediente(const string& nombre) override;
 
 	void agregarIngredientes(const vector<Ingrediente>& victor);
+
+	//Metodos para archivos, desarrollar en los hijos
+	virtual void escribirBinario(std::ofstream& os) const = 0;
+	virtual void leerBinario(std::ifstream& is) = 0;
 };
 
 
