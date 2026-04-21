@@ -8,3 +8,6 @@ public:
 	AppException(const std::string&);
 };
 
+
+//No se ha realizado codigo aun
+
