@@ -1,4 +1,4 @@
-#pragma once
+c#pragma once
 #include "IProducto.h"
 
 

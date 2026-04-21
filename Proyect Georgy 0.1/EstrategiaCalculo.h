@@ -7,9 +7,9 @@
 
 class EstrategiaCalculo {
 private:
-	float calculoSubtotal(std::vector<std::shared_ptr<IProducto>>);
-	float calculoImpuestos(float subt, int imp = 13);
-	float calculoDescuentos(float subt, int desc);
+	double calculoSubtotal(std::vector<std::shared_ptr<IProducto>>);
+	double calculoImpuestos(double subt, int imp = 13);
+	double calculoDescuentos(double subt, int desc);
 public:
-	float calculoTotal(std::vector<std::shared_ptr<IProducto>>);
+	double calculoTotal(std::vector<std::shared_ptr<IProducto>>);
 };

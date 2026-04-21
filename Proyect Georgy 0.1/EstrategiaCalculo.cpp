@@ -1,19 +1,23 @@
 #include "EstrategiaCalculo.h"
 using namespace std;
 
-float EstrategiaCalculo::calculoSubtotal(std::vector<std::shared_ptr<IProducto>> productos) {
-	float suma = 0.0;
-	for (auto& p : productos) {
-		(float) suma += p->getCosto();
+double EstrategiaCalculo::calculoSubtotal(const std::vector<std::shared_ptr<IProducto>>& productos) {
+	double suma = 0.0;
+	for (const auto& p : productos) {
+		suma += p->getCosto();
 	}
 	return suma;
 }
 
-float EstrategiaCalculo::calculoImpuestos(float subt, int imp) {
-	return (float) subt * (imp / 100);
+double EstrategiaCalculo::calculoImpuestos(double subt, int imp) {
+	return (double) subt * (imp / 100.0f);
 }
 
-float EstrategiaCalculo(std::vector<std::shared_ptr<IProducto>> productos) {
-	float subt = calculoSubtotal(productos);
-	return subt + calculoImpuestos(subt);
+double EstrategiaCalculo::calculoImpuestos(double subt, int desc) {
+
+}
+
+double EstrategiaCalculo::EstrategiaCalculo(const std::vector<std::shared_ptr<IProducto>>& productos) {
+	double subt = calculoSubtotal(productos);
+	return subt + calculoImpuestos(subt,13);
 }

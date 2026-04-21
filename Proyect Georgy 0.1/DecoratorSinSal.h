@@ -3,5 +3,6 @@
 class DecoratorSinSal :
     public ProductoDecorator
 {
+
 };
 

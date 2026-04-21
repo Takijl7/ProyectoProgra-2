@@ -9,7 +9,7 @@ Pedido::Pedido(shared_ptr<Cliente> c) : cliente(c), mpago(nullptr) {
 void Pedido::setMetodoPago(std::shared_ptr<IEstrategiaPago> metodo) {
 	mpago = metodo;
 }
-const string Pedido::realizarPago(float monto) {
+const string Pedido::realizarPago(double monto) {
 	
 }
 void Pedido::agregaProducto(shared_ptr<IProducto> p) {

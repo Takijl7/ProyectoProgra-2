@@ -1,5 +1,10 @@
 #pragma once
-class AppException
+#include <string>
+#include <stdexcept>
+
+class AppException : public std::runtime_error
 {
+public:
+	AppException(const std::string&);
 };
 

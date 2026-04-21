@@ -17,6 +17,6 @@ public:
 	Pedido(shared_ptr<Cliente>);
 
 	void setMetodoPago(shared_ptr<IEstrategiaPago>);
-	const string realizarPago(float);
+	const string realizarPago(double);
 	void agregaProducto(shared_ptr<IProducto>);
 };
