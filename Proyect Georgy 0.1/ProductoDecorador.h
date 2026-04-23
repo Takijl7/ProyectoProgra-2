@@ -1,5 +1,6 @@
 #pragma once
 #include "IProducto.h"
+#include "IProductoIngredientes.h"
 class ProductoDecorator :
     public IProducto
 {

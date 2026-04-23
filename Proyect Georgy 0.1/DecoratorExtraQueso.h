@@ -1,8 +1,9 @@
 #pragma once
-#include "ProductoDecorator.h"
+#include "ProductoDecorador.h"
 class DecoratorExtraQueso :
     public ProductoDecorator
 {
+public: 
+    DecoratorExtraQueso(std::shared_ptr<IProducto>);
+    double getCosto() const override;
 };
-
-//Sin codigo aun, pero esto se va a realizar el dia de manana 15 abril
