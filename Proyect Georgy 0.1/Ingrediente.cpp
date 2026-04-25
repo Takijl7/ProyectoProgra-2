@@ -5,6 +5,3 @@ Ingrediente::Ingrediente(const string& nombre, double extra) : nombre(nombre), e
 string Ingrediente::getNombre() const { return nombre; }
 double Ingrediente::getExtra() const { return extra; }
 
-bool Ingrediente::operator == (const Ingrediente& otro) const {
-	return nombre == otro.nombre;
-}

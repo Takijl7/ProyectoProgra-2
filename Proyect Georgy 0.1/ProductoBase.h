@@ -1,35 +1,36 @@
 #pragma once
 #include "IProducto.h"
-#include "IProductoIngredientes.h"
+#include "Ingrediente.h"
 
-class ProductoBase : public IProducto, public IProductoIngredientes
+
+class ProductoBase : public IProducto
 {
 protected:
 	string nombre;
 	double precioBase;
 	string descripcion;
-	string categoria;
+	char tamano;
 
 	vector<shared_ptr<Ingrediente>> ingrediente;
 	vector<shared_ptr<Ingrediente>> extras;
 	vector<string> quitados;
+
 public:
-	ProductoBase(const string& nombre, double precioBase, const string& descripcion, const string& categoria);
+	ProductoBase(const string& nombre, double precioBase, const string& descripcion, const char tam);
 
 	string getNombre() const override;
-	double getPrecioBase() const override;
 	double getCosto() const override;
 	string getDescripcion() const override;
-	string getCategoria() const override;
+	char getTamano() const override;
 
 	//Implementación de IProductoIngredientes
-	vector<shared_ptr<Ingrediente>> getIngredientes() const override;
-	vector<shared_ptr<Ingrediente>> getExtras() const override;
-	vector<string> getQuitados() const override;
+	vector<shared_ptr<Ingrediente>> getIngredientes() const ;
+	vector<shared_ptr<Ingrediente>> getExtras() const ;
+	vector<string> getQuitados() const ;
 
 	//Métodos para gestionar ingredientes
-	void setIngrediente(const Ingrediente& victor) override;
-	void quitarIngrediente(const string& nombre) override;
+	void setIngrediente(const Ingrediente& victor) ;
+	void quitarIngrediente(const string& nombre) ;
 	void agregarIngredientes(const vector<Ingrediente>& victor);
 
 	//Metodos para archivos, desarrollar en los hijos

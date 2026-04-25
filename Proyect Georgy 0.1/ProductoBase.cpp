@@ -1,13 +1,15 @@
 #include "ProductoBase.h"
+#include "DecoratorExtraQueso.h"
+#include "DecoratorCambiarTamano.h"
+#include "DecoratorSinSal.h"
 
-ProductoBase::ProductoBase(const string& nombre, double precioBase, const string& descripcion, const string& categoria)
-	: nombre(nombre), precioBase(precioBase), descripcion(descripcion), categoria(categoria) {}
+ProductoBase::ProductoBase(const string& nom, double base, const string& descrip, const char tam)
+	: nombre(nom), precioBase(base), descripcion(descrip) , tamano(tam){}
 
 string ProductoBase::getNombre() const { return nombre; }
-double ProductoBase::getPrecioBase() const { return precioBase; }
 double ProductoBase::getCosto() const { return precioBase; }
 string ProductoBase::getDescripcion() const { return descripcion; }
-string ProductoBase::getCategoria() const { return categoria; }
+char ProductoBase::getTamano() const { return tamano; }
 
 vector<shared_ptr<Ingrediente>> ProductoBase::getIngredientes() const { return ingrediente; }
 vector<shared_ptr<Ingrediente>> ProductoBase::getExtras() const { return extras; }
@@ -25,13 +27,6 @@ void ProductoBase::agregarIngredientes(const vector<Ingrediente>& victor)
 
 void ProductoBase::setIngrediente(const Ingrediente& victor) 
 {
-	for (const auto& nig : ingrediente)
-	{
-		if (*nig == victor)
-		{
-			return; 
-		}
-	}
 	ingrediente.push_back(make_shared<Ingrediente>(victor));
 }
 
@@ -49,7 +44,7 @@ void ProductoBase::quitarIngrediente(const string& nombre)
 }
 
 void ProductoBase::escribirBinario(std::ofstream& os) const {
-
+	 
 }
 void ProductoBase::leerBinario(std::ifstream& is) {
 

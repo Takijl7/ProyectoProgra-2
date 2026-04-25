@@ -123,10 +123,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="AppException.cpp" />
+    <ClCompile Include="Bebida.cpp" />
     <ClCompile Include="Cliente.cpp" />
-    <ClCompile Include="DecoratorExtraQueso.cpp" />
-    <ClCompile Include="DecoratorSinSal.cpp" />
+    <ClCompile Include="Comida.cpp" />
     <ClCompile Include="EstrategiaCalculo.cpp" />
     <ClCompile Include="Ingrediente.cpp" />
     <ClCompile Include="Menu.cpp" />
@@ -134,25 +133,28 @@
     <ClCompile Include="PagoEfectivo.cpp" />
     <ClCompile Include="PagoTarjeta.cpp" />
     <ClCompile Include="Pedido.cpp" />
+    <ClCompile Include="Postre.cpp" />
     <ClCompile Include="ProductoBase.cpp" />
-    <ClCompile Include="ProductoDecorador.cpp" />
     <ClCompile Include="Proyecto-Progra.cpp" />
+    <ClCompile Include="DecoratorCambiarTamano.h" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AppException.h" />
+    <ClInclude Include="Bebida.h" />
     <ClInclude Include="Cliente.h" />
+    <ClInclude Include="Comida.h" />
     <ClInclude Include="DecoratorExtraQueso.h" />
     <ClInclude Include="DecoratorSinSal.h" />
     <ClInclude Include="EstrategiaCalculo.h" />
     <ClInclude Include="IEstrategiaPago.h" />
     <ClInclude Include="Ingrediente.h" />
     <ClInclude Include="IProducto.h" />
-    <ClInclude Include="IProductoIngredientes.h" />
     <ClInclude Include="Menu.h" />
     <ClInclude Include="PagoDigital.h" />
     <ClInclude Include="PagoEfectivo.h" />
     <ClInclude Include="PagoTarjeta.h" />
     <ClInclude Include="Pedido.h" />
+    <ClInclude Include="Postre.h" />
     <ClInclude Include="ProductoBase.h" />
     <ClInclude Include="ProductoDecorador.h" />
   </ItemGroup>

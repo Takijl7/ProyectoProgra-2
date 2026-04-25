@@ -11,8 +11,7 @@ void crearMenu(shared_ptr<Menu>& m) {
     Ingrediente ing2("Queso", 0.0);
     Ingrediente ing3("Frijoles", 0.0);
     Ingrediente ing4("Carne Mechada", 0.0);
-    shared_ptr<ProductoBase> p1 = make_shared<ProductoBase>("Burrito de Carne", 3000, "Burrito de carne de 15cm con queso y frijoles", "Comida");
-
+    shared_ptr<ProductoBase> p1 = make_shared<ProductoBase>("Burrito de Carne", 3000, "Burrito de carne de 15cm con queso y frijoles", 'G');
 
     p1->setIngrediente(ing1);
     p1->setIngrediente(ing2);
@@ -23,7 +22,7 @@ void crearMenu(shared_ptr<Menu>& m) {
     Ingrediente ing6("Carne", 0.0);
     Ingrediente ing7("Lechuga", 0.0);
     Ingrediente ing8("Tomate", 0.0);
-    shared_ptr<ProductoBase> p2 = make_shared<ProductoBase>("Hamburgesa", 3500, "Hamburguesa Clasica", "Comida");
+    shared_ptr<ProductoBase> p2 = make_shared<ProductoBase>("Hamburgesa", 3500, "Hamburguesa Clasica", "G");
 
     p2->setIngrediente(ing5);
     p2->setIngrediente(ing6);
@@ -42,6 +41,6 @@ int main()
     cout << menu->mostrarProductos();
 
     cout << "Que desea ordenar?" << endl;
-    cin>>op
+	cin >> op
 }
 
