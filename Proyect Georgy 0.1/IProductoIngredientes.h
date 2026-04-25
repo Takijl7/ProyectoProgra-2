@@ -6,12 +6,12 @@
 class IProductoIngredientes
 {
 public:
-	virtual vector<shared_ptr<Ingrediente>> getIngredientes() const = 0;
-	virtual vector<shared_ptr<Ingrediente>> getExtras() const = 0;
-	virtual vector<string> getQuitados() const = 0;
+    virtual vector<shared_ptr<Ingrediente>> getIngredientes() const = 0;
+    virtual vector<shared_ptr<Ingrediente>> getExtras() const = 0;
+    virtual vector<string> getQuitados() const = 0;
 
-	virtual void setIngrediente(const Ingrediente& ing) = 0;
-	virtual void quitarIngrediente(const string& nombre) = 0;
+    virtual void setIngrediente(const Ingrediente& ing) = 0;
+    virtual void quitarIngrediente(const string& nombre) = 0;
 };
 
 //Implemnta el PRINCIPIO DE SEGREGACION DE INTERFAZ (ISP)

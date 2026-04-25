@@ -47,3 +47,10 @@ void ProductoBase::quitarIngrediente(const string& nombre)
 		}
 	}
 }
+
+void ProductoBase::escribirBinario(std::ofstream& os) const {
+
+}
+void ProductoBase::leerBinario(std::ifstream& is) {
+
+}

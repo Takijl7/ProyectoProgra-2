@@ -5,6 +5,7 @@
 #include <string>
 #include <vector>
 #include <memory>
+#include "Ingrediente.h"
 
 using namespace std;
 // PRINCIPIO DE SEGREGACIÓN DE INTERFAZ (ISP):
@@ -21,5 +22,12 @@ public:
     virtual double getCosto() const = 0;
     virtual string getDescripcion() const = 0;
     virtual string getCategoria() const = 0;
+
+    virtual vector<shared_ptr<Ingrediente>> getIngredientes() const = 0;
+    virtual vector<shared_ptr<Ingrediente>> getExtras() const = 0;
+    virtual vector<string> getQuitados() const = 0;
+
+    virtual void setIngrediente(const Ingrediente& ing) = 0;
+    virtual void quitarIngrediente(const string& nombre) = 0;
 };
 #endif

@@ -10,7 +10,7 @@ void Pedido::setMetodoPago(std::shared_ptr<IEstrategiaPago> metodo) {
 	mpago = metodo;
 }
 const string Pedido::realizarPago(double monto) {
-	
+	return mpago->getMensajePago();
 }
 void Pedido::agregaProducto(shared_ptr<IProducto> p) {
 	productos.push_back(p);

@@ -1,4 +1,5 @@
 #pragma once
+#include <memory>
 #include "IProducto.h"
 #include "IProductoIngredientes.h"
 class ProductoDecorator :

@@ -1,4 +1,4 @@
-c#pragma once
+#pragma once
 #include "IProducto.h"
 #include "IProductoIngredientes.h"
 
@@ -33,6 +33,6 @@ public:
 	void agregarIngredientes(const vector<Ingrediente>& victor);
 
 	//Metodos para archivos, desarrollar en los hijos
-	virtual void escribirBinario(std::ofstream& os) const = 0;
-	virtual void leerBinario(std::ifstream& is) = 0;
+	void escribirBinario(std::ofstream& os) const;
+	void leerBinario(std::ifstream& is);
 };

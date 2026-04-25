@@ -5,5 +5,5 @@
 class IEstrategiaPago {
 public:
 	virtual ~IEstrategiaPago() = default;
-	virtual const std::string getMensajePago() = 0;
+	virtual const std::string getMensajePago() const = 0;
 };
