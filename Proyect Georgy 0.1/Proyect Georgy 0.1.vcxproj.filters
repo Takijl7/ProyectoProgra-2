@@ -128,8 +128,8 @@
     <ClInclude Include="PedidoVacioException.h">
       <Filter>Resource Files</Filter>
     </ClInclude>
-    <ClInclude Include="EntradaInvalidaException.h">
-      <Filter>Resource Files</Filter>
+    <ClInclude Include="NoFileException.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

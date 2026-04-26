@@ -2,6 +2,8 @@
 #include "ProductoDecorador.h"
 #include "Ingrediente.h"
 
+//Aunque diga extra sal, este decorador sirve para quitar todo tipo de ingrediente
+
 using namespace std;
 
 class DecoratorSinSal : public ProductoDecorator

@@ -3,6 +3,8 @@
 #include "ingrediente.h"
 #include <memory>
 
+//Aunque dice extra queso, este decorador sirve para todo tipo de ingrediente
+
 class DecoratorExtraQueso : public ProductoDecorator 
 {
 private:

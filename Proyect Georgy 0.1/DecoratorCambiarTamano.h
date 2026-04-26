@@ -3,6 +3,8 @@
 #include <memory>
 #include <cctype>
 
+//Decorador de tamano 
+
 class DecoratorCambiarTamano : public ProductoDecorator
 {
 private:

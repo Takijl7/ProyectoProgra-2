@@ -13,7 +13,6 @@
 #include "PagoEfectivo.h" 
 #include "PagoTarjeta.h"
 #include "PagoDigital.h"
-#include "EntradaInvalidaException.h"
 #include "PedidoVacioException.h"
 #include "GestorArchivos.h"
 
@@ -42,7 +41,7 @@ int main() {
         };
         auto p3 = make_shared<Bebida>("Refresco Natural", 1000, "Frutas de temporada", 'M', TipoBebida::NATURAL);
 
-        auto p4 = make_shared<Postre>("Tiramisú", 2000, "Recien Hecho", 'G');
+        auto p4 = make_shared<Postre>("Tiramisu", 2000, "Recien Hecho", 'G');
         // Agregamos al menú
         menu->agregarProducto(p1);
         menu->agregarProducto(p2);

@@ -146,7 +146,6 @@
     <ClInclude Include="Comida.h" />
     <ClInclude Include="DecoratorExtraQueso.h" />
     <ClInclude Include="DecoratorSinSal.h" />
-    <ClInclude Include="EntradaInvalidaException.h" />
     <ClInclude Include="EstrategiaCalculo.h" />
     <ClInclude Include="GestorArchivos.h" />
     <ClInclude Include="IEstrategiaPago.h" />
