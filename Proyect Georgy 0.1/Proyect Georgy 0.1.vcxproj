@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -127,6 +127,7 @@
     <ClCompile Include="Cliente.cpp" />
     <ClCompile Include="Comida.cpp" />
     <ClCompile Include="EstrategiaCalculo.cpp" />
+    <ClCompile Include="GestorArchivos.cpp" />
     <ClCompile Include="Ingrediente.cpp" />
     <ClCompile Include="Menu.cpp" />
     <ClCompile Include="PagoDigital.cpp" />
@@ -146,6 +147,7 @@
     <ClInclude Include="DecoratorExtraQueso.h" />
     <ClInclude Include="DecoratorSinSal.h" />
     <ClInclude Include="EstrategiaCalculo.h" />
+    <ClInclude Include="GestorArchivos.h" />
     <ClInclude Include="IEstrategiaPago.h" />
     <ClInclude Include="Ingrediente.h" />
     <ClInclude Include="IProducto.h" />

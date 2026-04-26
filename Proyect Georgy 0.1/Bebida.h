@@ -11,5 +11,8 @@ public:
 	Bebida(string nom, double precio, string desc, char tam, TipoBebida t);
 
 	TipoBebida getTipo() const;
+
+	void escribirBinario(std::ofstream& os) const override;
+	void leerBinario(std::ifstream& is) override;
 };
 

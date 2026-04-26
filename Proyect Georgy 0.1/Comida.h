@@ -9,5 +9,8 @@ public:
 
 	bool getEsVegano() const;
 	string getDescripcion() const override;
+
+	void escribirBinario(std::ofstream& os) const override;
+	void leerBinario(std::ifstream& is) override;
 };
 

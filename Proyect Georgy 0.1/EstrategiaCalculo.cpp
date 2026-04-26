@@ -19,5 +19,6 @@ double EstrategiaCalculo::calculoDescuentos(double subt, int desc) {
 
 double EstrategiaCalculo::calculoTotal(const std::vector<std::shared_ptr<IProducto>>& productos) {
 	double subt = calculoSubtotal(productos);
+	subt -= calculoDescuentos(subt, 0);
 	return subt + calculoImpuestos(subt, 13);
 }
