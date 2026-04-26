@@ -11,9 +11,7 @@ protected:
 	double precioBase;
 	string descripcion;
 	char tamano;
-
 	vector<shared_ptr<Ingrediente>> ingrediente;
-	vector<shared_ptr<Ingrediente>> extras;
 	vector<string> quitados;
 
 public:
@@ -23,18 +21,12 @@ public:
 	double getCosto() const override;
 	string getDescripcion() const override;
 	char getTamano() const override;
+	void setIngrediente(const Ingrediente& victor);
+	void quitarIngrediente(shared_ptr<Ingrediente>);
+	void agregarIngredientes(const vector<Ingrediente>& vIngredientes);
 
-	//Implementación de IProductoIngredientes
-	vector<shared_ptr<Ingrediente>> getIngredientes() const ;
-	vector<shared_ptr<Ingrediente>> getExtras() const ;
-	vector<string> getQuitados() const ;
-
-	//Métodos para gestionar ingredientes
-	void setIngrediente(const Ingrediente& victor) ;
-	void quitarIngrediente(const string& nombre) ;
-	void agregarIngredientes(const vector<Ingrediente>& victor);
-
-	//Metodos para archivos, desarrollar en los hijos
+	const vector<shared_ptr<Ingrediente>>& getIngredientes() const;
+	const vector<string> getQuitados() const;
 	virtual void escribirBinario(std::ofstream& os) const = 0;
 	virtual void leerBinario(std::ifstream& is) = 0;
 };

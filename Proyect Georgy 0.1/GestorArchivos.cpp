@@ -49,7 +49,6 @@ void GestorArchivos::cargarEstadoBinario(Pedido& menu, const string& ruta) {
 		if (cocina.count(tipo)) {
 			auto nuevoProducto = cocina[tipo]();
 			nuevoProducto->leerBinario(archivo);
-			
 		}
 	}
 }

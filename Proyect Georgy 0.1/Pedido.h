@@ -5,9 +5,13 @@
 #include <sstream>
 #include "IProducto.h"
 #include "Cliente.h"
+#include "Ingrediente.h"
 #include "IEstrategiaPago.h"
 #include "EstrategiaCalculo.h"
-#include "AppException.h"
+#include "PInsuficuenteException.h"
+#include "NoMetodoDePagoException.h"
+
+
 
 class Pedido {
 private:

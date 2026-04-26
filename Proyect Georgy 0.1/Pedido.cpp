@@ -26,7 +26,7 @@ const string Pedido::realizarPago(double monto) {
 		throw PInsuficuenteException(monto);
 	}
 	if (!mpago) {
-		throw AppException("ERROR; No existe Metodo de Pago seleccionado");
+		throw NoMetodoDePagoException();
 	}
 	s << "\tFactura del Pedido\n\n";
 	s << mostrarProductos() << endl;
@@ -40,7 +40,6 @@ const string Pedido::realizarPago(double monto) {
 void Pedido::agregaProducto(shared_ptr<IProducto> p) {
 	productos.push_back(p);
 }
-
 const vector<shared_ptr<IProducto>>& Pedido::getProductos() const {
 	return productos;
 }

@@ -57,6 +57,9 @@
     <ClCompile Include="Postre.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="GestorArchivos.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AppException.h">
@@ -111,6 +114,21 @@
       <Filter>Resource Files</Filter>
     </ClInclude>
     <ClInclude Include="Postre.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GestorArchivos.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NoMetodoDePagoException.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PInsuficuenteException.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PedidoVacioException.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EntradaInvalidaException.h">
       <Filter>Resource Files</Filter>
     </ClInclude>
   </ItemGroup>
