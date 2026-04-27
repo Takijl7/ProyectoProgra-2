@@ -4,6 +4,7 @@
 #include "Bebida.h"
 #include "Comida.h"
 #include "Postre.h"
+#include "NoFileException.h"
 #include <fstream>
 
 using namespace std;
@@ -18,7 +19,7 @@ namespace {
 
 void GestorArchivos::guardarEstadoBinario(const Pedido& pedido, const string& ruta) {
 	ofstream archivo(ruta, ios::binary);
-	if (!archivo) return;
+	if (!archivo) throw NoFileException(ruta);
 
 	const auto& productos = pedido.getProductos();
 	size_t total_memoria = productos.size();
@@ -32,11 +33,11 @@ void GestorArchivos::guardarEstadoBinario(const Pedido& pedido, const string& ru
 	}
 }
 
-void GestorArchivos::cargarEstadoBinario(Pedido& menu, const string& ruta) {
+void GestorArchivos::cargarEstadoBinario(Pedido& pedido, const string& ruta) {
 	ifstream archivo(ruta, ios::binary);
-	if (!archivo) return;
+	if (!archivo) throw NoFileException(ruta);
 
-	menu.limpiarProductos();
+	pedido.limpiarProductos();
 
 	size_t total_memoria = 0;
 	archivo.read(reinterpret_cast<char*>(&total_memoria), sizeof(total_memoria));
@@ -49,6 +50,7 @@ void GestorArchivos::cargarEstadoBinario(Pedido& menu, const string& ruta) {
 		if (cocina.count(tipo)) {
 			auto nuevoProducto = cocina[tipo]();
 			nuevoProducto->leerBinario(archivo);
+			pedido.agregaProducto(nuevoProducto);
 		}
 	}
 }

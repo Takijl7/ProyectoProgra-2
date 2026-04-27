@@ -10,6 +10,7 @@
 #include "EstrategiaCalculo.h"
 #include "PInsuficuenteException.h"
 #include "NoMetodoDePagoException.h"
+#include "PedidoVacioException.h"
 
 
 

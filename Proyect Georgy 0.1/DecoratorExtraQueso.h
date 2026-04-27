@@ -8,7 +8,7 @@ class DecoratorExtraQueso : public ProductoDecorator
 private:
 	std::shared_ptr<Ingrediente> ingrediente;
 public:
-	DecoratorExtraQueso(std::shared_ptr<IProducto> p, std::shared_ptr<Ingrediente> i) : ProductoDecorator(p) , ingrediente(i) {}
+	DecoratorExtraQueso(std::shared_ptr<IProducto> p) : ProductoDecorator(p) , ingrediente(make_shared<Ingrediente>("Queso", 300)) {}
 
 	double getCosto() const override
 	{
@@ -17,6 +17,6 @@ public:
 
 	string getNombre() const override
 	{
-		return producto->getNombre() + "\n" + "Extra de " + ingrediente->getNombre() + "\n";
+		return producto->getNombre() + " " + "Extra de " + ingrediente->getNombre();
 	}
 };

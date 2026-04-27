@@ -21,20 +21,30 @@ const string Pedido::mostrarProductos() const {
 }
 const string Pedido::realizarPago(double monto) {
 	stringstream s;
-	double subt = ecalculo->calculoSubtotal(productos);
-	if (monto < ecalculo->calculoTotal(productos)) {
-		throw PInsuficuenteException(monto);
-	}
-	if (!mpago) {
-		throw NoMetodoDePagoException();
-	}
 	s << "\tFactura del Pedido\n\n";
+	int d = 0;
+	if (productos.empty()) throw PedidoVacioException();
+	if (!mpago) throw NoMetodoDePagoException();
+	else {
+		s << mpago->getMensajePago();
+	}
+	double subt = ecalculo->calculoSubtotal(productos);
+	if (cliente->getCantP() == 0) {
+		d = 5;
+	}
+	else if (cliente->getCantP()>20){
+		d = 10;
+	}
+	if (monto < ecalculo->calculoTotal(productos,d)) throw PInsuficuenteException(monto);
+	cliente->setCantP(cliente->getCantP() + 1);
+
+	s << "[Cliente] " << cliente->getNombre() << endl << endl;
 	s << mostrarProductos() << endl;
-	s << "Subtotal: " << subt << endl;
-	s << "Descuento: -" << ecalculo->calculoDescuentos(subt,0) << endl;
-	s << "Impuestos: +" << ecalculo->calculoImpuestos(subt, 13) << endl;
-	s << "Total: " << ecalculo->calculoTotal(productos);
-	s << mpago->getMensajePago() << endl;
+	s << "[Calculo] Subtotal: " << subt << endl;
+	s << "[Calculo] Descuento: -" << ecalculo->calculoDescuentos(subt,d) << endl;
+	s << "[Calculo] Impuestos: +" << ecalculo->calculoImpuestos(subt, 13) << endl;
+	s << "[Calculo] Total: " << ecalculo->calculoTotal(productos,d) << endl;
+	s << "[Calculo] Vuelto: " << monto - ecalculo->calculoTotal(productos,d) << endl;
 	return s.str();
 }
 void Pedido::agregaProducto(shared_ptr<IProducto> p) {

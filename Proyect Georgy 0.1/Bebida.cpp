@@ -9,8 +9,8 @@ TipoBebida Bebida::getTipo() const {
 }
 
 void Bebida::escribirBinario(std::ofstream& os) const {
-    int tipo = 1;
-    os.write(reinterpret_cast<const char*>(&tipo), sizeof(tipo));
+    int tipoP = 1;
+    os.write(reinterpret_cast<const char*>(&tipoP), sizeof(tipoP));
 
     size_t tamNombre = nombre.size();
     os.write(reinterpret_cast<const char*>(&tamNombre), sizeof(tamNombre));
