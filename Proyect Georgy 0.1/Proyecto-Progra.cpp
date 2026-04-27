@@ -63,7 +63,7 @@ int main() {
         pedido->agregaProducto(p1);
 
         cout << "\033[3;34m[Sistema]\033[0m Agregando Extra Queso a la hamburguesa\n";
-        shared_ptr<DecoratorExtraQueso> pD2 = make_shared<DecoratorExtraQueso>(p2);
+        shared_ptr<DecoratorExtraQueso> pD2 = make_shared<DecoratorExtraQueso>(p2, make_shared<Ingrediente>("Queso", 300));
 
         cout << "\033[3;34m[Sistema]\033[0m Agregando Hamburguesa al pedido (Decorada)\n";
         pedido->agregaProducto(pD2);

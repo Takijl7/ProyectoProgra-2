@@ -13,6 +13,13 @@ public:
 
 	double getCosto() const 
 	{ 
-		double costoBase = producto->getCosto() - ingrediente->getExtra();
+		return producto->getCosto() - ingrediente->getExtra();
 	}
+
+	string getNombre() const override
+	{
+		return producto->getNombre() + " Sin " + ingrediente->getNombre();
+	}
+
+	std::shared_ptr<Ingrediente> getIngrediente() const { return ingrediente; }
 };
