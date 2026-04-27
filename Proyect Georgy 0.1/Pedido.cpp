@@ -38,13 +38,13 @@ const string Pedido::realizarPago(double monto) {
 	if (monto < ecalculo->calculoTotal(productos,d)) throw PInsuficuenteException(monto);
 	cliente->setCantP(cliente->getCantP() + 1);
 
-	s << "[Cliente] " << cliente->getNombre() << endl << endl;
+	s << "\033[3;34m[Cliente]\033[0m " << cliente->getNombre() << endl << endl;
 	s << mostrarProductos() << endl;
-	s << "[Calculo] Subtotal: " << subt << endl;
-	s << "[Calculo] Descuento: -" << ecalculo->calculoDescuentos(subt,d) << endl;
-	s << "[Calculo] Impuestos: +" << ecalculo->calculoImpuestos(subt, 13) << endl;
-	s << "[Calculo] Total: " << ecalculo->calculoTotal(productos,d) << endl;
-	s << "[Calculo] Vuelto: " << monto - ecalculo->calculoTotal(productos,d) << endl;
+	s << "\033[3;34m[Calculo]\033[0m Subtotal: " << subt << endl;
+	s << "\033[3;34m[Calculo]\033[0m Descuento: -" << ecalculo->calculoDescuentos(subt,d) << endl;
+	s << "\033[3;34m[Calculo]\033[0m Impuestos: +" << ecalculo->calculoImpuestos(subt, 13) << endl;
+	s << "\033[3;34m[Calculo]\033[0m Total: " << ecalculo->calculoTotal(productos,d) << endl;
+	s << "\033[3;34m[Calculo]\033[0m Vuelto: " << monto - ecalculo->calculoTotal(productos,d) << endl;
 	return s.str();
 }
 void Pedido::agregaProducto(shared_ptr<IProducto> p) {

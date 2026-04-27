@@ -50,57 +50,57 @@ int main() {
         menu->agregarProducto(p4);
 
 
-        cout << "[Sistema] Iniciando Simulacion\n\n\tBienvenido\n\n";
+        cout << "\033[3;34m[Sistema]\033[0m Iniciando Simulacion\n\n\tBienvenido\n\n";
 
-        cout << "[Sistema] Generado cliente\n\n";
+        cout << "\033[3;34m[Sistema]\033[0m Generado cliente\n\n";
         shared_ptr<Cliente> cliente = make_shared<Cliente>("Pedro");
 
         cout << endl << menu->mostrarProductos() << endl;
 
         shared_ptr<Pedido> pedido = make_shared<Pedido>(cliente);
 
-        cout << "[Sistema] Agregando Burrito de Carne al pedido\n";
+        cout << "\033[3;34m[Sistema]\033[0m Agregando Burrito de Carne al pedido\n";
         pedido->agregaProducto(p1);
 
-        cout << "[Sistema] Agregando Extra Queso a la hamburguesa\n";
+        cout << "\033[3;34m[Sistema]\033[0m Agregando Extra Queso a la hamburguesa\n";
         shared_ptr<DecoratorExtraQueso> pD2 = make_shared<DecoratorExtraQueso>(p2);
 
-        cout << "[Sistema] Agregando Hamburguesa al pedido (Decorada)\n";
+        cout << "\033[3;34m[Sistema]\033[0m Agregando Hamburguesa al pedido (Decorada)\n";
         pedido->agregaProducto(pD2);
 
-        cout << "[Sistema] Cambiando el tamano de Refresco Natural a Grande\n";
+        cout << "\033[3;34m[Sistema]\033[0m Cambiando el tamano de Refresco Natural a Grande\n";
         shared_ptr<DecoratorCambiarTamano> pD1 = make_shared<DecoratorCambiarTamano>(p3, 'G');
 
-        cout << "[Sistema] Agregando Refresco Natural al pedido (Decorada)\n";
+        cout << "\033[3;34m[Sistema]\033[0m Agregando Refresco Natural al pedido (Decorada)\n";
         pedido->agregaProducto(pD1);
 
         cout << pedido->mostrarProductos();
 
-        cout << "[Sistema] Asignando metodo de pago\n";
+        cout << "\033[3;34m[Sistema]\033[0m Asignando metodo de pago\n";
         shared_ptr<IEstrategiaPago> mpago = make_shared<PagoDigital>();
         pedido->setMetodoPago(mpago);
 
-        cout << "[Usuario] Monto Dispensado: 10000\n";
-        cout << "[Cliente] Descuento Asignado por ser Cliente Nuevo (5%)\n";
+        cout << "\033[3;34m[Usuario]\033[0m Monto Dispensado: 10000\n";
+        cout << "\033[3;34m[Cliente]\033[0m Descuento Asignado por ser Cliente Nuevo (5%)\n\n";
         cout << pedido->realizarPago(10000.0);
 
-        cout << endl << endl << "[Sistema] Guardando este pedido\n";
+        cout << endl << endl << "\033[3;34m[Sistema]\033[0m Guardando este pedido\n";
         GestorArchivos::guardarEstadoBinario(*pedido, "pedido.dat");
 
-        cout << endl << endl << "[Sistema] Alterando este pedido para demostrar persistencia de datos\n";
-        cout << "[Sistema] Agregando Tiramisu al pedido\n";
+        cout << endl << endl << "\033[3;34m[Sistema]\033[0m Alterando este pedido para demostrar persistencia de datos\n";
+        cout << "\033[3;34m[Sistema]\033[0m Agregando Tiramisu al pedido\n";
         pedido->agregaProducto(p4);
-        cout << "[Sistema] Asignando metodo de pago\n";
+        cout << "\033[3;34m[Sistema]\033[0m Asignando metodo de pago\n";
         shared_ptr<IEstrategiaPago> mpago2 = make_shared<PagoEfectivo>();
         pedido->setMetodoPago(mpago2);
-        cout << "[Usuario] Monto Dispensado: 12000\n";
-        cout << "[Cliente] No se asigna descuento al no ser cliente nuevo\n";
+        cout << "\033[3;34m[Usuario]\033[0m Monto Dispensado: 12000\n";
+        cout << "\033[3;34m[Cliente]\033[0m No se asigna descuento al no ser cliente nuevo\n\n";
         cout << pedido->realizarPago(12000.0);
 
-        cout << endl << endl << "[Sistema] Cargando Pedido anterior\n";
+        cout << endl << endl << "\033[3;34m[Sistema]\033[0m Cargando Pedido anterior\n";
         GestorArchivos::cargarEstadoBinario(*pedido, "pedido.dat");
 
-        cout << "[Cliente] Monto Dispensado: 10000\n";
+        cout << "\033[3;34m[Cliente]\033[0m Monto Dispensado: 10000\n\n";
         cout << pedido->realizarPago(10000.0);
     }
     catch (const exception& error) {

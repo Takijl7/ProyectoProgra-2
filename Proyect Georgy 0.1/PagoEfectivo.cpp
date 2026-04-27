@@ -2,5 +2,5 @@
 using namespace std;
 
 const string PagoEfectivo::getMensajePago() const {
-	return "[Metodo de Pago] Realizando Pago en Efectivo\n";
+	return "\033[3;34m[Metodo de Pago]\033[0m Realizando Pago en Efectivo\n";
 }

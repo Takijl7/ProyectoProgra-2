@@ -2,5 +2,5 @@
 using namespace std;
 
 const string PagoDigital::getMensajePago() const {
-	return "[Metodo de Pago] Realizando Pago Digital\n";
+	return "\033[3;34m[Metodo de Pago]\033[0m Realizando Pago Digital\n";
 }
